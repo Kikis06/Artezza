@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Círculo Artezza | Programa de lealtad</title>
+  <meta name="description" content="Acumula puntos con cada compra en Artezza y recibe beneficios para tu siguiente pieza.">
+  <meta name="theme-color" content="#3b2a24">
+  <link rel="icon" href="img/marca/logo-artezza.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-pagina="circulo" data-seccion="circulo">
+  <div id="cabecera"></div>
+
+  <main id="contenido">
+    <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / <span aria-current="page">Círculo Artezza</span></nav>
+    <header class="coleccion-cabecera">
+      <div>
+        <p class="antetitulo">Programa de lealtad</p>
+        <h1>Círculo Artezza</h1>
+        <p>Por cada $100 de compra acumulas 10 puntos. Al reunir 200 puntos, recibes $100 para tu siguiente pieza. Te registras con tu número de WhatsApp, sin tarjetas físicas.</p>
+      </div>
+    </header>
+
+    <section class="seccion circulo-oscuro" aria-labelledby="tituloBeneficios">
+      <div class="seccion-encabezado"><h2 id="tituloBeneficios">Tus beneficios</h2></div>
+      <ul class="beneficios">
+        <li class="beneficio">
+          <strong>10 puntos</strong>
+          <h3>Por cada $100</h3>
+          <p>Acumulas en cada compra.</p>
+        </li>
+        <li class="beneficio">
+          <strong>15 %</strong>
+          <h3>En tu cumpleaños</h3>
+          <p>De descuento durante tu mes de cumpleaños.</p>
+        </li>
+        <li class="beneficio">
+          <strong>50 puntos</strong>
+          <h3>Por recomendar</h3>
+          <p>Para ti y para tu amiga cuando la recomiendas.</p>
+        </li>
+      </ul>
+      <div class="calculadora">
+        <label for="montoCompra">Calcula tus puntos: si compras (en pesos)</label>
+        <input id="montoCompra" type="number" min="0" step="50" value="600">
+        <span>acumulas <output for="montoCompra" id="puntosCalculados">60 puntos</output>.</span>
+      </div>
+    </section>
+  </main>
+
+  <div id="pie"></div>
+
+  <script src="js/catalogo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
